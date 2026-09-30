@@ -1,0 +1,10 @@
+asignacion('IC-1802','C1','P-001','A-102','L',1,2).
+asignacion('IC-1802','C1','P-001','A-101','M',1,2).
+asignacion('IC-1802','C2','P-002','A-101','M',3,2).
+asignacion('IC-1802','C2','P-002','A-101','M',5,2).
+asignacion('IC-2001','C1','P-003','A-101','L',1,2).
+asignacion('IC-2001','C1','P-003','A-101','L',3,2).
+asignacion('IC-2101','C1','P-004','LAB-1','L',1,3).
+asignacion('MA-1002','C1','P-001','A-101','L',5,1).
+asignacion('MA-1002','C1','P-001','A-101','L',6,1).
+asignacion('MA-1002','C1','P-001','A-101','L',7,1).

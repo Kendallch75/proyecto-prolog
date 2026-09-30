@@ -1,0 +1,24 @@
+# Tres sesiones, dos tipos de aula y un profesor compartido.
+#:CONFIG
+dias;L,M
+franjas;3
+inicio;08:00
+duracion_franja;50
+#:AULA
+A-1;30;teoria
+LAB-1;20;laboratorio
+#:PROFESOR
+P-1;Ana;4;
+P-2;Beto;2;L1-L2,M1-M2
+#:CURSO
+MAT;Matematica;G1;25;2;1;teoria
+LAB;Practica;G1;18;1;2;laboratorio
+#:IMPARTE
+MAT;G1;P-1
+LAB;G1;P-1
+LAB;G1;P-2
+#:RESTRICCION
+aula_fija;LAB;G1;LAB-1
+prohibida;MAT;G1;M3
+prefiere;MAT;G1;L1;3
+compacta;MAT;G1;2

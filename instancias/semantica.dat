@@ -1,0 +1,27 @@
+# Secciones fuera de orden; espacios; tildes; co-docencia.
+#:CURSO
+ T ; Teoria con dos docentes ; G ; 25 ; 1 ; 2 ; teoria
+ B ; Laboratorio ; G ; 15 ; 1 ; 1 ; laboratorio
+ M ; Mixta ; G ; 10 ; 1 ; 1 ; mixta
+#:IMPARTE
+T;G;P1
+T;G;P2
+B;G;P1
+M;G;P3
+#:RESTRICCION
+prohibida;T;G;M2
+excluyentes;B;G;M;G
+#:AULA
+A;30;teoria
+B;20;laboratorio
+X;30;mixta
+S;10;teoria
+#:PROFESOR
+P1;Ángela;3;L1-L1,M1-M1
+P2;Édgar;2;L1-L1
+P3;Inés;1;
+#:CONFIG
+dias;L,M
+franjas;3
+inicio;08:00
+duracion_franja;45

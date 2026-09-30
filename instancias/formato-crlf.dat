@@ -1,0 +1,13 @@
+#:CONFIG
+dias;L
+franjas;1
+inicio;08:00
+duracion_franja;60
+#:AULA
+A;20;teoria
+#:PROFESOR
+P;Ana;1;
+#:CURSO
+C;Curso;G;10;1;1;teoria
+#:IMPARTE
+C;G;P

@@ -1,0 +1,33 @@
+# Instancia sintetica resoluble de 20 sesiones; 5 grupos de cuatro.
+# Cada pareja aula-dia pertenece a un grupo; no codifica un horario en el programa.
+#:CONFIG
+dias;L,M,X,J,V
+franjas;4
+inicio;07:00
+duracion_franja;60
+#:AULA
+A1;40;teoria
+#:PROFESOR
+P01;Profesor 1;4;L1-L4
+P02;Profesor 2;4;M1-M4
+P03;Profesor 3;4;X1-X4
+P04;Profesor 4;4;J1-J4
+P05;Profesor 5;4;V1-V4
+#:CURSO
+C01;Curso 1;G;21;4;1;teoria
+C02;Curso 2;G;22;4;1;teoria
+C03;Curso 3;G;23;4;1;teoria
+C04;Curso 4;G;24;4;1;teoria
+C05;Curso 5;G;25;4;1;teoria
+#:IMPARTE
+C01;G;P01
+C02;G;P02
+C03;G;P03
+C04;G;P04
+C05;G;P05
+#:RESTRICCION
+aula_fija;C01;G;A1
+aula_fija;C02;G;A1
+aula_fija;C03;G;A1
+aula_fija;C04;G;A1
+aula_fija;C05;G;A1

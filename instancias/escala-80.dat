@@ -1,0 +1,96 @@
+# Instancia sintetica resoluble de 80 sesiones; 20 grupos de cuatro.
+# Cada pareja aula-dia pertenece a un grupo; no codifica un horario en el programa.
+#:CONFIG
+dias;L,M,X,J,V
+franjas;4
+inicio;07:00
+duracion_franja;60
+#:AULA
+A1;40;teoria
+A2;40;teoria
+A3;40;teoria
+A4;40;teoria
+#:PROFESOR
+P01;Profesor 1;4;L1-L4
+P02;Profesor 2;4;M1-M4
+P03;Profesor 3;4;X1-X4
+P04;Profesor 4;4;J1-J4
+P05;Profesor 5;4;V1-V4
+P06;Profesor 6;4;L1-L4
+P07;Profesor 7;4;M1-M4
+P08;Profesor 8;4;X1-X4
+P09;Profesor 9;4;J1-J4
+P10;Profesor 10;4;V1-V4
+P11;Profesor 11;4;L1-L4
+P12;Profesor 12;4;M1-M4
+P13;Profesor 13;4;X1-X4
+P14;Profesor 14;4;J1-J4
+P15;Profesor 15;4;V1-V4
+P16;Profesor 16;4;L1-L4
+P17;Profesor 17;4;M1-M4
+P18;Profesor 18;4;X1-X4
+P19;Profesor 19;4;J1-J4
+P20;Profesor 20;4;V1-V4
+#:CURSO
+C01;Curso 1;G;21;4;1;teoria
+C02;Curso 2;G;22;4;1;teoria
+C03;Curso 3;G;23;4;1;teoria
+C04;Curso 4;G;24;4;1;teoria
+C05;Curso 5;G;25;4;1;teoria
+C06;Curso 6;G;26;4;1;teoria
+C07;Curso 7;G;27;4;1;teoria
+C08;Curso 8;G;28;4;1;teoria
+C09;Curso 9;G;29;4;1;teoria
+C10;Curso 10;G;20;4;1;teoria
+C11;Curso 11;G;21;4;1;teoria
+C12;Curso 12;G;22;4;1;teoria
+C13;Curso 13;G;23;4;1;teoria
+C14;Curso 14;G;24;4;1;teoria
+C15;Curso 15;G;25;4;1;teoria
+C16;Curso 16;G;26;4;1;teoria
+C17;Curso 17;G;27;4;1;teoria
+C18;Curso 18;G;28;4;1;teoria
+C19;Curso 19;G;29;4;1;teoria
+C20;Curso 20;G;20;4;1;teoria
+#:IMPARTE
+C01;G;P01
+C02;G;P02
+C03;G;P03
+C04;G;P04
+C05;G;P05
+C06;G;P06
+C07;G;P07
+C08;G;P08
+C09;G;P09
+C10;G;P10
+C11;G;P11
+C12;G;P12
+C13;G;P13
+C14;G;P14
+C15;G;P15
+C16;G;P16
+C17;G;P17
+C18;G;P18
+C19;G;P19
+C20;G;P20
+#:RESTRICCION
+aula_fija;C01;G;A1
+aula_fija;C02;G;A1
+aula_fija;C03;G;A1
+aula_fija;C04;G;A1
+aula_fija;C05;G;A1
+aula_fija;C06;G;A2
+aula_fija;C07;G;A2
+aula_fija;C08;G;A2
+aula_fija;C09;G;A2
+aula_fija;C10;G;A2
+aula_fija;C11;G;A3
+aula_fija;C12;G;A3
+aula_fija;C13;G;A3
+aula_fija;C14;G;A3
+aula_fija;C15;G;A3
+aula_fija;C16;G;A4
+aula_fija;C17;G;A4
+aula_fija;C18;G;A4
+aula_fija;C19;G;A4
+aula_fija;C20;G;A4

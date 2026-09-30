@@ -1,0 +1,33 @@
+# Acumula errores; no se debe abortar al encontrar el primero.
+registro;antes;de;seccion
+#:CONFIG
+dias;L,M
+franjas;3
+inicio;25:80
+# Falta duracion_franja.
+franjas;4
+#:AULA
+A;30;teoria
+A;20;teoria
+B;-5;laboratorio
+C;muchos;mixta
+D;20;desconocido
+#:PROFESOR
+P;Profesora;4;Z1-Z2
+Q;Profesor;4;L1-L99
+#:CURSO
+C1;Curso;G;20;1;1;teoria
+C1;Curso;G;20;1;1;teoria
+C2;Otro;G;20;1;9;teoria
+C3;Otro mas;G;20;1;1;desconocido
+#:IMPARTE
+C1;G;NO-EXISTE
+NO-CURSO;G;P
+#:RESTRICCION
+aula_fija;C1;G;NO-AULA
+prohibida;C1;G;Z1
+prefiere;C1;G;L99;2
+compacta;C1;G;-3
+excluyentes;C1;G;OTRO;G
+no-existe;C1;G
+#:AULA

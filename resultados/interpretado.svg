@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1320" viewBox="0 0 1200 1320" role="img" aria-labelledby="titulo descripcion">
+<title id="titulo">Nodos explorados por instancia y configuracion</title>
+<desc id="descripcion">Treinta y cinco corridas reales con limite de 5000 nodos. El eje horizontal usa log10 de uno mas el numero de nodos. Los contornos discontinuos identifican corridas que alcanzaron el limite.</desc>
+<rect width="1200" height="1320" fill="#f8fafc"/>
+<style>text{font-family:Arial,sans-serif;fill:#172033} .small{font-size:13px}.label{font-size:14px}.group{font-size:19px;font-weight:bold}.grid{stroke:#d6dce5;stroke-width:1}</style>
+<text x="32" y="42" font-size="27" font-weight="bold">Busqueda de horarios: modo interpretado</text>
+<text x="32" y="70" class="label">Nodos explorados; limite comun de 5000 por corrida; escala log10(1 + nodos).</text>
+<text x="32" y="93" class="small">BT ingenuo sin simetria. Las otras configuraciones activan simetria. CLPFD opt exige costo minimo.</text>
+<line x1="230.00" y1="122" x2="230.00" y2="1251" class="grid"/>
+<text x="230.00" y="117" text-anchor="middle" class="small">0</text>
+<line x1="421.44" y1="122" x2="421.44" y2="1251" class="grid"/>
+<text x="421.44" y="117" text-anchor="middle" class="small">10</text>
+<line x1="598.46" y1="122" x2="598.46" y2="1251" class="grid"/>
+<text x="598.46" y="117" text-anchor="middle" class="small">100</text>
+<line x1="781.57" y1="122" x2="781.57" y2="1251" class="grid"/>
+<text x="781.57" y="117" text-anchor="middle" class="small">1000</text>
+<line x1="910.00" y1="122" x2="910.00" y2="1251" class="grid"/>
+<text x="910.00" y="117" text-anchor="middle" class="small">5000</text>
+<text x="32" y="145" class="group">pequena (3 sesiones)</text>
+<text x="215" y="177" text-anchor="end" class="label">bt_ingenuo</text>
+<rect x="230" y="163" width="191.44" height="18" rx="3" fill="#64748b"><title>pequena / bt_ingenuo: 10 nodos; solucion; CPU 0.001 s</title></rect>
+<text x="930" y="177" class="small">10 | solucion | 0.001 s</text>
+<text x="215" y="203" text-anchor="end" class="label">bt_mrv</text>
+<rect x="230" y="189" width="110.68" height="18" rx="3" fill="#2563eb"><title>pequena / bt_mrv: 3 nodos; solucion; CPU 0.001 s</title></rect>
+<text x="930" y="203" class="small">3 | solucion | 0.001 s</text>
+<text x="215" y="229" text-anchor="end" class="label">bt_grado</text>
+<rect x="230" y="215" width="110.68" height="18" rx="3" fill="#7c3aed"><title>pequena / bt_grado: 3 nodos; solucion; CPU 0.001 s</title></rect>
+<text x="930" y="229" class="small">3 | solucion | 0.001 s</text>
+<text x="215" y="255" text-anchor="end" class="label">bt_demanda</text>
+<rect x="230" y="241" width="110.68" height="18" rx="3" fill="#c026d3"><title>pequena / bt_demanda: 3 nodos; solucion; CPU 0.001 s</title></rect>
+<text x="930" y="255" class="small">3 | solucion | 0.001 s</text>
+<text x="215" y="281" text-anchor="end" class="label">bt_lcv</text>
+<rect x="230" y="267" width="110.68" height="18" rx="3" fill="#0891b2"><title>pequena / bt_lcv: 3 nodos; solucion; CPU 0.001 s</title></rect>
+<text x="930" y="281" class="small">3 | solucion | 0.001 s</text>
+<text x="215" y="307" text-anchor="end" class="label">clpfd_ff</text>
+<rect x="230" y="293" width="110.68" height="18" rx="3" fill="#059669"><title>pequena / clpfd_ff: 3 nodos; solucion; CPU 0.001 s</title></rect>
+<text x="930" y="307" class="small">3 | solucion | 0.001 s</text>
+<text x="215" y="333" text-anchor="end" class="label">clpfd_opt</text>
+<rect x="230" y="319" width="110.68" height="18" rx="3" fill="#d97706"><title>pequena / clpfd_opt: 3 nodos; solucion; CPU 0.001 s</title></rect>
+<text x="930" y="333" class="small">3 | solucion | 0.001 s</text>
+<text x="32" y="369" class="group">campus (10 sesiones)</text>
+<text x="215" y="401" text-anchor="end" class="label">bt_ingenuo</text>
+<rect x="230" y="387" width="680.00" height="18" rx="3" fill="#64748b" stroke="#172033" stroke-width="2" stroke-dasharray="5 3"><title>campus / bt_ingenuo: 5000 nodos; limite; CPU 0.465 s</title></rect>
+<text x="930" y="401" class="small">5000 | limite | 0.465 s</text>
+<text x="215" y="427" text-anchor="end" class="label">bt_mrv</text>
+<rect x="230" y="413" width="191.44" height="18" rx="3" fill="#2563eb"><title>campus / bt_mrv: 10 nodos; solucion; CPU 0.006 s</title></rect>
+<text x="930" y="427" class="small">10 | solucion | 0.006 s</text>
+<text x="215" y="453" text-anchor="end" class="label">bt_grado</text>
+<rect x="230" y="439" width="191.44" height="18" rx="3" fill="#7c3aed"><title>campus / bt_grado: 10 nodos; solucion; CPU 0.133 s</title></rect>
+<text x="930" y="453" class="small">10 | solucion | 0.133 s</text>
+<text x="215" y="479" text-anchor="end" class="label">bt_demanda</text>
+<rect x="230" y="465" width="191.44" height="18" rx="3" fill="#c026d3"><title>campus / bt_demanda: 10 nodos; solucion; CPU 0.005 s</title></rect>
+<text x="930" y="479" class="small">10 | solucion | 0.005 s</text>
+<text x="215" y="505" text-anchor="end" class="label">bt_lcv</text>
+<rect x="230" y="491" width="191.44" height="18" rx="3" fill="#0891b2"><title>campus / bt_lcv: 10 nodos; solucion; CPU 0.074 s</title></rect>
+<text x="930" y="505" class="small">10 | solucion | 0.074 s</text>
+<text x="215" y="531" text-anchor="end" class="label">clpfd_ff</text>
+<rect x="230" y="517" width="274.16" height="18" rx="3" fill="#059669"><title>campus / clpfd_ff: 30 nodos; solucion; CPU 0.022 s</title></rect>
+<text x="930" y="531" class="small">30 | solucion | 0.022 s</text>
+<text x="215" y="557" text-anchor="end" class="label">clpfd_opt</text>
+<rect x="230" y="543" width="432.40" height="18" rx="3" fill="#d97706"><title>campus / clpfd_opt: 224 nodos; solucion; CPU 0.106 s</title></rect>
+<text x="930" y="557" class="small">224 | solucion | 0.106 s</text>
+<text x="32" y="593" class="group">escala20 (20 sesiones)</text>
+<text x="215" y="625" text-anchor="end" class="label">bt_ingenuo</text>
+<rect x="230" y="611" width="680.00" height="18" rx="3" fill="#64748b" stroke="#172033" stroke-width="2" stroke-dasharray="5 3"><title>escala20 / bt_ingenuo: 5000 nodos; limite; CPU 0.622 s</title></rect>
+<text x="930" y="625" class="small">5000 | limite | 0.622 s</text>
+<text x="215" y="651" text-anchor="end" class="label">bt_mrv</text>
+<rect x="230" y="637" width="243.06" height="18" rx="3" fill="#2563eb"><title>escala20 / bt_mrv: 20 nodos; solucion; CPU 0.003 s</title></rect>
+<text x="930" y="651" class="small">20 | solucion | 0.003 s</text>
+<text x="215" y="677" text-anchor="end" class="label">bt_grado</text>
+<rect x="230" y="663" width="243.06" height="18" rx="3" fill="#7c3aed"><title>escala20 / bt_grado: 20 nodos; solucion; CPU 0.026 s</title></rect>
+<text x="930" y="677" class="small">20 | solucion | 0.026 s</text>
+<text x="215" y="703" text-anchor="end" class="label">bt_demanda</text>
+<rect x="230" y="689" width="243.06" height="18" rx="3" fill="#c026d3"><title>escala20 / bt_demanda: 20 nodos; solucion; CPU 0.004 s</title></rect>
+<text x="930" y="703" class="small">20 | solucion | 0.004 s</text>
+<text x="215" y="729" text-anchor="end" class="label">bt_lcv</text>
+<rect x="230" y="715" width="243.06" height="18" rx="3" fill="#0891b2"><title>escala20 / bt_lcv: 20 nodos; solucion; CPU 0.003 s</title></rect>
+<text x="930" y="729" class="small">20 | solucion | 0.003 s</text>
+<text x="215" y="755" text-anchor="end" class="label">clpfd_ff</text>
+<rect x="230" y="741" width="243.06" height="18" rx="3" fill="#059669"><title>escala20 / clpfd_ff: 20 nodos; solucion; CPU 0.005 s</title></rect>
+<text x="930" y="755" class="small">20 | solucion | 0.005 s</text>
+<text x="215" y="781" text-anchor="end" class="label">clpfd_opt</text>
+<rect x="230" y="767" width="243.06" height="18" rx="3" fill="#d97706"><title>escala20 / clpfd_opt: 20 nodos; solucion; CPU 0.006 s</title></rect>
+<text x="930" y="781" class="small">20 | solucion | 0.006 s</text>
+<text x="32" y="817" class="group">escala40 (40 sesiones)</text>
+<text x="215" y="849" text-anchor="end" class="label">bt_ingenuo</text>
+<rect x="230" y="835" width="680.00" height="18" rx="3" fill="#64748b" stroke="#172033" stroke-width="2" stroke-dasharray="5 3"><title>escala40 / bt_ingenuo: 5000 nodos; limite; CPU 1.095 s</title></rect>
+<text x="930" y="849" class="small">5000 | limite | 1.095 s</text>
+<text x="215" y="875" text-anchor="end" class="label">bt_mrv</text>
+<rect x="230" y="861" width="296.48" height="18" rx="3" fill="#2563eb"><title>escala40 / bt_mrv: 40 nodos; solucion; CPU 0.014 s</title></rect>
+<text x="930" y="875" class="small">40 | solucion | 0.014 s</text>
+<text x="215" y="901" text-anchor="end" class="label">bt_grado</text>
+<rect x="230" y="887" width="296.48" height="18" rx="3" fill="#7c3aed"><title>escala40 / bt_grado: 40 nodos; solucion; CPU 0.233 s</title></rect>
+<text x="930" y="901" class="small">40 | solucion | 0.233 s</text>
+<text x="215" y="927" text-anchor="end" class="label">bt_demanda</text>
+<rect x="230" y="913" width="296.48" height="18" rx="3" fill="#c026d3"><title>escala40 / bt_demanda: 40 nodos; solucion; CPU 0.012 s</title></rect>
+<text x="930" y="927" class="small">40 | solucion | 0.012 s</text>
+<text x="215" y="953" text-anchor="end" class="label">bt_lcv</text>
+<rect x="230" y="939" width="296.48" height="18" rx="3" fill="#0891b2"><title>escala40 / bt_lcv: 40 nodos; solucion; CPU 0.017 s</title></rect>
+<text x="930" y="953" class="small">40 | solucion | 0.017 s</text>
+<text x="215" y="979" text-anchor="end" class="label">clpfd_ff</text>
+<rect x="230" y="965" width="296.48" height="18" rx="3" fill="#059669"><title>escala40 / clpfd_ff: 40 nodos; solucion; CPU 0.023 s</title></rect>
+<text x="930" y="979" class="small">40 | solucion | 0.023 s</text>
+<text x="215" y="1005" text-anchor="end" class="label">clpfd_opt</text>
+<rect x="230" y="991" width="296.48" height="18" rx="3" fill="#d97706"><title>escala40 / clpfd_opt: 40 nodos; solucion; CPU 0.024 s</title></rect>
+<text x="930" y="1005" class="small">40 | solucion | 0.024 s</text>
+<text x="32" y="1041" class="group">escala80 (80 sesiones)</text>
+<text x="215" y="1073" text-anchor="end" class="label">bt_ingenuo</text>
+<rect x="230" y="1059" width="680.00" height="18" rx="3" fill="#64748b" stroke="#172033" stroke-width="2" stroke-dasharray="5 3"><title>escala80 / bt_ingenuo: 5000 nodos; limite; CPU 2.262 s</title></rect>
+<text x="930" y="1073" class="small">5000 | limite | 2.262 s</text>
+<text x="215" y="1099" text-anchor="end" class="label">bt_mrv</text>
+<rect x="230" y="1085" width="350.84" height="18" rx="3" fill="#2563eb"><title>escala80 / bt_mrv: 80 nodos; solucion; CPU 0.061 s</title></rect>
+<text x="930" y="1099" class="small">80 | solucion | 0.061 s</text>
+<text x="215" y="1125" text-anchor="end" class="label">bt_grado</text>
+<rect x="230" y="1111" width="350.84" height="18" rx="3" fill="#7c3aed"><title>escala80 / bt_grado: 80 nodos; solucion; CPU 1.934 s</title></rect>
+<text x="930" y="1125" class="small">80 | solucion | 1.934 s</text>
+<text x="215" y="1151" text-anchor="end" class="label">bt_demanda</text>
+<rect x="230" y="1137" width="350.84" height="18" rx="3" fill="#c026d3"><title>escala80 / bt_demanda: 80 nodos; solucion; CPU 0.063 s</title></rect>
+<text x="930" y="1151" class="small">80 | solucion | 0.063 s</text>
+<text x="215" y="1177" text-anchor="end" class="label">bt_lcv</text>
+<rect x="230" y="1163" width="350.84" height="18" rx="3" fill="#0891b2"><title>escala80 / bt_lcv: 80 nodos; solucion; CPU 0.078 s</title></rect>
+<text x="930" y="1177" class="small">80 | solucion | 0.078 s</text>
+<text x="215" y="1203" text-anchor="end" class="label">clpfd_ff</text>
+<rect x="230" y="1189" width="350.84" height="18" rx="3" fill="#059669"><title>escala80 / clpfd_ff: 80 nodos; solucion; CPU 0.126 s</title></rect>
+<text x="930" y="1203" class="small">80 | solucion | 0.126 s</text>
+<text x="215" y="1229" text-anchor="end" class="label">clpfd_opt</text>
+<rect x="230" y="1215" width="350.84" height="18" rx="3" fill="#d97706"><title>escala80 / clpfd_opt: 80 nodos; solucion; CPU 0.126 s</title></rect>
+<text x="930" y="1229" class="small">80 | solucion | 0.126 s</text>
+<text x="32" y="1284" class="small">Borde discontinuo = limite alcanzado. Menos nodos no implica menor tiempo: consultar CPU y pared en el CSV.</text>
+<text x="32" y="1307" class="small">Las instancias de 20, 40 y 80 sesiones son estructuradas: sus resultados no representan cualquier horario universitario.</text>
+</svg>

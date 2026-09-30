@@ -1,0 +1,14 @@
+# Los identificadores pueden contener comas, comillas y caracteres UTF-8.
+#:CONFIG
+dias;L
+franjas;1
+inicio;08:00
+duracion_franja;60
+#:AULA
+A"1;20;teoria
+#:PROFESOR
+P,ñ"1;María José;1;
+#:CURSO
+C,ñ"1;Curso de demostración;G"1;10;1;1;teoria
+#:IMPARTE
+C,ñ"1;G"1;P,ñ"1

@@ -1,0 +1,54 @@
+# Instancia sintetica resoluble de 40 sesiones; 10 grupos de cuatro.
+# Cada pareja aula-dia pertenece a un grupo; no codifica un horario en el programa.
+#:CONFIG
+dias;L,M,X,J,V
+franjas;4
+inicio;07:00
+duracion_franja;60
+#:AULA
+A1;40;teoria
+A2;40;teoria
+#:PROFESOR
+P01;Profesor 1;4;L1-L4
+P02;Profesor 2;4;M1-M4
+P03;Profesor 3;4;X1-X4
+P04;Profesor 4;4;J1-J4
+P05;Profesor 5;4;V1-V4
+P06;Profesor 6;4;L1-L4
+P07;Profesor 7;4;M1-M4
+P08;Profesor 8;4;X1-X4
+P09;Profesor 9;4;J1-J4
+P10;Profesor 10;4;V1-V4
+#:CURSO
+C01;Curso 1;G;21;4;1;teoria
+C02;Curso 2;G;22;4;1;teoria
+C03;Curso 3;G;23;4;1;teoria
+C04;Curso 4;G;24;4;1;teoria
+C05;Curso 5;G;25;4;1;teoria
+C06;Curso 6;G;26;4;1;teoria
+C07;Curso 7;G;27;4;1;teoria
+C08;Curso 8;G;28;4;1;teoria
+C09;Curso 9;G;29;4;1;teoria
+C10;Curso 10;G;20;4;1;teoria
+#:IMPARTE
+C01;G;P01
+C02;G;P02
+C03;G;P03
+C04;G;P04
+C05;G;P05
+C06;G;P06
+C07;G;P07
+C08;G;P08
+C09;G;P09
+C10;G;P10
+#:RESTRICCION
+aula_fija;C01;G;A1
+aula_fija;C02;G;A1
+aula_fija;C03;G;A1
+aula_fija;C04;G;A1
+aula_fija;C05;G;A1
+aula_fija;C06;G;A2
+aula_fija;C07;G;A2
+aula_fija;C08;G;A2
+aula_fija;C09;G;A2
+aula_fija;C10;G;A2

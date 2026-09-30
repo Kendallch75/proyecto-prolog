@@ -1,0 +1,20 @@
+# Optimo demostrado: sesiones en L1 y L4, preferencia incumplida (3)
+# mas dos huecos compacta (2*4): costo total 11.
+#:CONFIG
+dias;L
+franjas;4
+inicio;08:00
+duracion_franja;60
+#:AULA
+A;30;teoria
+#:PROFESOR
+P;Profesor;2;
+#:CURSO
+C;Curso con huecos;G;20;2;1;teoria
+#:IMPARTE
+C;G;P
+#:RESTRICCION
+prohibida;C;G;L2
+prohibida;C;G;L3
+prefiere;C;G;L2;3
+compacta;C;G;4
