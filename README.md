@@ -151,3 +151,47 @@ La batería devuelve un código distinto de cero si falla. Incluye ambos motores
 | `resultados/` | Ejemplos y mediciones reales. |
 
 Referencia del lenguaje: [manual oficial de GNU Prolog 1.5.0](https://www.gprolog.org/manual/gprolog.html).
+
+##diferentes maneras de ejecutar 
+1. Backtracking ingenuo
+Orden original, sin comprobación anticipada y sin simetrías:
+gprolog --consult-file horarios.pl --entry-goal cli -- \
+  instancias/pequena.dat resultado_bt_ingenuo.txt bt \
+  --heuristica=original --valor=original \
+  --sin-anticipada --sin-simetria --limite=5000
+
+2. Backtracking con MRV
+Selecciona primero la sesión con menos opciones y utiliza comprobación anticipada:
+gprolog --consult-file horarios.pl --entry-goal cli -- \
+  instancias/pequena.dat resultado_bt_mrv.txt bt \
+  --heuristica=mrv --anticipada --limite=5000
+
+3. Backtracking con grado
+Prioriza sesiones con más relaciones de conflicto:
+gprolog --consult-file horarios.pl --entry-goal cli -- \
+  instancias/pequena.dat resultado_bt_grado.txt bt \
+  --heuristica=grado --anticipada --limite=5000
+
+4. Backtracking con demanda
+Prioriza según inscritos, sesiones semanales y duración:
+gprolog --consult-file horarios.pl --entry-goal cli -- \
+  instancias/pequena.dat resultado_bt_demanda.txt bt \
+  --heuristica=demanda --anticipada --limite=5000
+
+5. Backtracking con MRV y LCV
+MRV selecciona la sesión; LCV ordena sus candidatos:
+gprolog --consult-file horarios.pl --entry-goal cli -- \
+  instancias/pequena.dat resultado_bt_lcv.txt bt \
+  --heuristica=mrv --valor=lcv --anticipada --limite=5000
+
+6. CLP(FD) con first-fail
+Propagación de restricciones y selección por menor dominio:
+gprolog --consult-file horarios.pl --entry-goal cli -- \
+  instancias/pequena.dat resultado_clpfd_ff.txt clpfd \
+  --heuristica=ff --limite=5000
+
+7. CLP(FD) con optimización
+Busca el menor costo, además de cumplir las restricciones duras:
+gprolog --consult-file horarios.pl --entry-goal cli -- \
+  instancias/pequena.dat resultado_clpfd_opt.txt clpfd \
+  --heuristica=ff --optimizar --limite=5000

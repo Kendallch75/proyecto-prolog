@@ -427,3 +427,4 @@ bus_diag_impactos([R-L|Rs],Blandas,Base,[impacto(L,R,Eliminados,Base)|Is]) :-
     bus_diag_pon_restricciones([R-L|Blandas]),bus_diag_total(Actual),
     Eliminados is max(0,Base-Actual),
     bus_diag_impactos(Rs,Blandas,Base,Is).
+

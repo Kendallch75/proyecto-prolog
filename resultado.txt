@@ -1,0 +1,65 @@
+================================================================
+       ASIGNACION DE HORARIOS UNIVERSITARIOS
+================================================================
+Instancia : instancias/sin-solucion.dat
+Estrategia : clpfd (ff)
+Estado : SIN SOLUCION
+Fecha : 2026-10-13 21:31:53
+Optimo demostrado : no
+================================================================
+DETALLE DE ASIGNACIONES
+# | Curso | Grupo | Profesor(es) | Aula | Dia | Franjas
+Sin sesiones asignadas.
+================================================================
+
+HORARIO POR GRUPO: C1 G
+Franja | Hora | L
+1 | 08:00-09:00 | --
+2 | 09:00-10:00 | --
+
+HORARIO POR GRUPO: C2 G
+Franja | Hora | L
+1 | 08:00-09:00 | --
+2 | 09:00-10:00 | --
+
+HORARIO POR GRUPO: C3 G
+Franja | Hora | L
+1 | 08:00-09:00 | --
+2 | 09:00-10:00 | --
+
+HORARIO POR PROFESOR: P1
+Franja | Hora | L
+1 | 08:00-09:00 | --
+2 | 09:00-10:00 | --
+
+HORARIO POR PROFESOR: P2
+Franja | Hora | L
+1 | 08:00-09:00 | --
+2 | 09:00-10:00 | --
+
+HORARIO POR PROFESOR: P3
+Franja | Hora | L
+1 | 08:00-09:00 | --
+2 | 09:00-10:00 | --
+================================================================
+DIAGNOSTICO
+Sesiones a programar: 3
+Primera restriccion que vuelve imposible el prefijo (comprobado):
+  Linea 27: excluyentes('C2','G','C3','G')
+Las restricciones individuales no podan valores en la raiz; el conflicto es conjunto.
+Franjas-aula disponibles: 6 (1 dias x 2 franjas x 3 aulas)
+Mayor demanda: profesor('P3'), 1 franjas semanales.
+Restricciones duras declaradas implicadas (no es un nucleo minimo):
+  Linea 25: excluyentes('C1','G','C2','G')
+  Linea 26: excluyentes('C1','G','C3','G')
+  Linea 27: excluyentes('C2','G','C3','G')
+No existe horario que satisfaga conjuntamente las restricciones duras.
+================================================================
+METRICAS DE EJECUCION
+Sesiones a programar ............ 3
+Espacio ingenuo (log10) ......... 2.334454
+Nodos explorados ................ 6
+Retrocesos (backtracks) ......... 6
+Tiempo de CPU (s) ............... 0.003000
+Tiempo de pared (s) ............. 0.003000
+Nodos por segundo ............... 2000.00
